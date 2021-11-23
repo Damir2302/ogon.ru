@@ -9,8 +9,13 @@ button.btn {
     text-align: center;
     border-radius: 100px;
     cursor: pointer;
+    transition: all 0.3s;
 
     @include breakpoint(xs) {
         padding: 12px 64px;
+    }
+
+    &:hover {
+        transform: scale(1.1)
     }
 }

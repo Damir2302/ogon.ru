@@ -69,10 +69,13 @@ button.btn {
   color: #fff;
   text-align: center;
   border-radius: 100px;
-  cursor: pointer; }
+  cursor: pointer;
+  transition: all 0.3s; }
   @media (min-width: 505px) {
     button.btn {
       padding: 12px 6.4rem; } }
+  button.btn:hover {
+    transform: scale(1.1); }
 
 .header {
   background: url("../images/header.svg") no-repeat;
@@ -83,24 +86,38 @@ button.btn {
       background-position: top right; } }
 
 .header__logo {
+  position: relative;
   padding: 2rem 0 6rem;
   max-width: 13rem; }
   @media (min-width: 505px) {
     .header__logo {
       padding: 3.6rem 0 8rem; } }
 
+.header__logo img.animate {
+  width: 5.6rem;
+  position: absolute;
+  left: 3.2rem;
+  animation: logo 10s linear infinite; }
+
+@keyframes logo {
+  100% {
+    transform: rotate(360deg); } }
+
 .subscribe__inner {
   padding-bottom: 135px;
   background: url("../images/background_1.png") no-repeat;
-  background-position: bottom;
+  background-position: bottom left;
   border-radius: 12px; }
   @media (min-width: 505px) {
     .subscribe__inner {
-      padding-left: 20px; } }
+      padding-left: 20px;
+      background-position: bottom left; } }
   @media (min-width: 992px) {
     .subscribe__inner {
-      padding-bottom: 0;
-      background-position: right; } }
+      padding-left: 0;
+      padding-bottom: 32px;
+      background: url("../images/background_2.png") no-repeat;
+      background-position: bottom right; } }
 
 .subscribe__text {
   margin-bottom: 24px;
@@ -115,22 +132,6 @@ button.btn {
   @media (min-width: 992px) {
     .subscribe__text {
       max-width: 62rem; } }
-
-.subscribe__background {
-  width: 100%;
-  height: 100%; }
-
-.subscribe__background img {
-  position: relative;
-  bottom: 0;
-  border-radius: 12px;
-  z-index: -1; }
-  @media (min-width: 505px) {
-    .subscribe__background img {
-      bottom: 10rem; } }
-  @media (min-width: 992px) {
-    .subscribe__background img {
-      bottom: 26rem; } }
 
 .section-features {
   padding: 4rem 0 2rem; }
@@ -225,6 +226,10 @@ button.btn {
 
 .footer__contacts {
   margin: 16px 0 12px; }
+  .footer__contacts a {
+    transition: all 0.2s; }
+  .footer__contacts a:hover {
+    color: #2a2a2a; }
   .footer__contacts a:first-child {
     padding-right: 6px; }
     @media (min-width: 505px) {
