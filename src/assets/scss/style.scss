@@ -49,6 +49,10 @@
         background-color: #f6c766;
         border-radius: 10px;
     }
+
+    @include breakpoint(lg) {
+        max-width: 620px;
+    }
 }
 
 .subscribe__background {

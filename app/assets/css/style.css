@@ -112,6 +112,9 @@ button.btn {
     padding: 5px;
     background-color: #f6c766;
     border-radius: 10px; }
+  @media (min-width: 992px) {
+    .subscribe__text {
+      max-width: 62rem; } }
 
 .subscribe__background {
   width: 100%;
