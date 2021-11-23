@@ -1,0 +1,71 @@
+doctype html
+html(lang="ru")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title «Огонь» – подписка на каждый день!
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+        link(rel="stylesheet", href="assets/css/style.css")
+        link(rel="shortcut icon", href="assets/images/favicon.png", type="image/x-icon")
+    body
+        .page
+
+            header.header
+                .container
+                    .header__logo
+                        img(src="assets/images/logo.svg", alt="logo")
+
+            main.main
+
+                section.section-subscribe
+                    .container
+                        .subscribe__inner
+                            p.subscribe__text <span>Спасибо</span> за интерес к подписке! <br>Осталось всего пара шагов, чтобы получить максимум пользы от партнеров «Огня»
+                            button.subscribe__button.btn Оформить подписку
+
+                section.section-features
+                    .container
+                        .features__inner
+                            .features__block
+                                .block__item
+                                    img(src="assets/images/lenta_online.png", alt="icon")
+                                    h4 Лента Онлайн
+                                    span Заказывайте доставку продуктов с выгодой до 10%
+                                .block__item
+                                    img(src="assets/images/gazprom.png", alt="icon")
+                                    h4 Газпромнефть
+                                    span Получайте двойные бонусы и дополнительный кешбэк
+
+
+                                .block__item
+                                    img(src="assets/images/rivgosh.png", alt="icon")
+                                    h4 Рив Гош
+                                    span Покупайте парфюмерию и косметику со скидкой до 30%
+                                .block__item
+                                    img(src="assets/images/lenta.png", alt="icon")
+                                    h4 Лента
+                                    span Совершайте покупки в супермаркетах с выгодой до 13%
+
+                section.section-banner
+                    .container
+                        .banner
+                            .banner__inner
+                                .banner__wrap
+                                    img(src="assets/images/logo-banner.svg", alt="logo")
+                                    h2 С подпиской выгоднее сразу все ;)
+                                    button.banner__button.btn Узнать больше
+
+
+            footer.footer
+                .container
+                    .footer__inner
+                        .footer__text C уважением, служба поддержки подписки «Огонь»
+                        .footer__notice Сообщение сгенерировано автоматически. Пожалуйста, не отвечайте на это письмо. Для связи с командой поддержки используйте контакты, приведённые ниже.
+                        .footer__contacts
+                            a(href="ogon.ru") ogon.ru
+                            a(href="mailto:help@ogon.ru") help@ogon.ru
+                            a(href="tel:+79166966696") +7 916 696-66-96
+                        div © 2021 Огонь. Все права защищены

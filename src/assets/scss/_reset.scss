@@ -1,0 +1,72 @@
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #ffffff;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+img,
+ul,
+button {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    vertical-align: baseline;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+}
+
+.page {
+    position: relative;
+    min-width: 320px;
+    min-height: 100%;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0 20px;
+    max-width: 600px;
+
+    @include breakpoint(xs) {
+        padding: 0 36px;
+    }
+
+    @include breakpoint(lg) {
+        padding: 0 46px;
+        max-width: 1024px;
+    }
+}
